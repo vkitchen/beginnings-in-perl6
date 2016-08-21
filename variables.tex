@@ -1,0 +1,127 @@
+\chapter{Variables}
+
+\section{Values and Types}
+
+\begin{lstlisting}
+> say "hello"
+hello
+\end{lstlisting}
+
+\begin{lstlisting}
+> say 7
+7
+\end{lstlisting}
+
+\begin{lstlisting}
+> say 7_500
+7500
+\end{lstlisting}
+
+\begin{lstlisting}
+> WHAT "hello"
+(Str)
+\end{lstlisting}
+
+\begin{lstlisting}
+> WHAT 7
+(Int)
+\end{lstlisting}
+
+\begin{lstlisting}
+> WHAT 5.3
+(Rat)
+\end{lstlisting}
+
+\begin{lstlisting}
+> WHAT "7"
+(Str)
+\end{lstlisting}
+
+\section{Variables}
+
+\begin{lstlisting}
+> my $message = "What's your name?"
+What's your name?
+> my $n = 17
+17
+> my $pi = 3.14159
+3.14159
+\end{lstlisting}
+
+\begin{lstlisting}
+> my 7 = $n
+===SORRY!=== Error while compiling:
+Malformed my
+------> my⏏ 7 = $n
+\end{lstlisting}
+
+\begin{lstlisting}
+> my \pi = 3.14159
+3.14159
+\end{lstlisting}
+
+\begin{lstlisting}
+> my $3g = 60
+===SORRY!=== Error while compiling:
+Cannot declare a numeric variable
+------> my $3⏏g = 60
+\end{lstlisting}
+
+\section{Numeric Operations}
+
+\begin{lstlisting}
+> 5 + 4
+9
+\end{lstlisting}
+
+\begin{lstlisting}
+> "hello"
+hello
+> pi
+3.14159
+\end{lstlisting}
+
+\begin{lstlisting}
+20 + 32
+5 ** 2
+59 / 60
+7 - 2
+6 * 2
+\end{lstlisting}
+
+\begin{lstlisting}
+> 92 % 7
+1
+> 92 %% 7
+False
+> 70 %% 7
+True
+\end{lstlisting}
+
+\begin{lstlisting}
+> (2 * 4) ** 3
+512
+\end{lstlisting}
+
+\section{String Operations}
+
+\begin{lstlisting}
+> "mine! " x 10
+mine! mine! mine! mine! mine! mine! mine! mine! mine! mine!
+\end{lstlisting}
+
+\begin{lstlisting}
+> "con" ~ "cat" ~ "e" ~ "nate"
+concatenate
+\end{lstlisting}
+
+\section{Coercion}
+
+\begin{lstlisting}
+> 7 ~ 5
+75
+> WHAT 7 ~ 5
+(Str)
+> 5 + (7 ~ 5)
+80
+\end{lstlisting}

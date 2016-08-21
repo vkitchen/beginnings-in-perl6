@@ -1,0 +1,34 @@
+\documentclass{book}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{atomPurple}{RGB}{198,120,221}
+\definecolor{atomRed}{RGB}{224,108,117}
+\definecolor{atomGreen}{RGB}{152,195,121}
+\definecolor{atomGreyLight}{RGB}{171,178,191}
+\definecolor{atomGreyDark}{RGB}{92,99,112}
+\definecolor{atomBlack}{RGB}{56,58,66}
+
+\lstset{
+language=Perl,
+numbers=left,
+showstringspaces=false,
+frame=tb,
+keywordstyle=\color{atomPurple},
+stringstyle=\color{atomGreen},
+commentstyle=\color{atomGreyDark}
+}
+
+\begin{document}
+\title{Beginnings in Perl 6}
+\author{Vaughan Kitchen}
+\maketitle
+
+\mainmatter
+\include{introduction}
+\include{tour}
+\include{variables}
+\include{functions}
+\include{conditionals}
+
+\end{document}

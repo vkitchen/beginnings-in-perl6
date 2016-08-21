@@ -1,0 +1,49 @@
+\chapter{Quick Tour of Programming}
+The hardest part of programming when you're first learning is figuring out what
+you can do and how. This section is a quick tour through some simple programs.
+It is meant to show you how quickly you can build something that's fun.
+Once we've finished here we'll work on refining the concepts and cementing them
+in your brain.
+
+The first thing we're going to write is the well known hello world example.
+\lstinputlisting{code/tour-hello.p6}
+You've now written your first program. Hopefully you've managed to run it,
+if not check Appendix A for information on running code.
+
+That first program is pretty boring. Let's make something a bit more interactive
+\lstinputlisting{code/tour-prompt.p6}
+That's pretty sweet eh? What other questions could you ask?
+What about answering the question with a word instead of a number?
+
+Let's break it down to see what's happening. Here we've just stored a number
+straight into our variable named \$count. A variable is like a box which we can
+store something into. But because we can have lots of boxes storing lots of
+things we have to give it a name, just like if we were moving house.
+Now we can easily ask for that value back
+\lstinputlisting{code/tour-var.p6}
+What if we want to store multiple things in our variable?
+We use a different type known as an array. Notice it starts with @ instead of
+\$ which tells perl we want to be able to use it for multiple values.
+We also have to ask for our values back slightly differently.
+\lstinputlisting{code/tour-array.p6}
+It would be tedious to type out the whole fibonacci series. We invented
+computers to solve that exact kind of maths. Here's a program that takes
+a list and extends it with the last two items added together, 100 times.
+\lstinputlisting{code/tour-fib.p6}
+While the fibonacci sequence is undoubtadly cool. It's not what I personally
+spend my spare time studying. I much prefer games. Here's a really
+easy one you can make. A name generator, in this case for your wolf name
+
+In the output string, we can use curly brackets to tell perl the code needs to
+be run. If you're finding perl is just outputting the text it may
+be because you're missing the brackets.
+\lstinputlisting{code/tour-name-generator.p6}
+Another thing we can do in programs is known as conditionals. Simply we can
+branch the program to behave in different ways depending on input.
+\lstinputlisting{code/tour-if.p6}
+One last program to show off some of what we've learnt. Used to love playing
+this one as a kid.
+\lstinputlisting{code/tour-guessing.p6}
+How was that? Not too bad I hope. If you didn't find it too clear you'll start
+to get the hang of it with the next sections. All we wanted is for you to be
+inspired by what programming can offer.
